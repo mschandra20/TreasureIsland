@@ -97,3 +97,81 @@ ul.grid{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/*HEADER */
+header{
+    background-color: rgba(0,0,0,0.5);
+    color:#fff;
+    max-width:100%;
+    height: 100%;
+
+}
+header h3{
+    padding: 20px;
+    font-family: "Arial",sans-serif;
+
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    position: absolute;
+    left:200px;
+    top:20px;
+
+}
+
+header ul li{
+    margin: 0px 10px;
+
+}
+
+header ul li:first-child{
+    margin-left:0;
+}
+
+header ul li:last-child{
+    margin-right:0;
+}
+
+
+
+
+/*FOOTER */
+footer{
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    padding:60px 0px;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:30px;
+    justify-content: center;
+}
+
+footer ul li{
+    padding: 0px 10px;
+
+}
+
+footer ul li:first-child{
+    margin-left:0;
+}
+
+footer ul li:last-child{
+    margin-right:0;
+}
+
+footer p{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgba(0,0,0,0.4);
+    font-size: 75%;
+
+}
