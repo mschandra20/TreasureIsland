@@ -34,13 +34,19 @@ hr{
 }
 
 .round{
-
     border:6px solid #2196F3;
     border-radius: 50%;
 }
 
-section{
+section h2{
+    text-align: center;
+}
 
+#about{
+    text-align: center;
+    align-content: center;
+}
+section{
     background-color: #FFF;
     padding: 125px 100px;
     display: flex;
@@ -145,9 +151,11 @@ header nav li:last-child{
 @media(max-width:600px){
     header {
         flex-direction: column;
+        transition-duration: 0.3s;
     }
     header h3{
         margin-bottom: 15px;
+        transition-duration: 0.3s;
 
     }
 }
@@ -169,7 +177,7 @@ header nav li:last-child{
     top: 0;
     left: 0;
     width:100%;
-    height: 100%;
+    height: 75%;
     z-index: -1;
     background-size: cover;
     background-color: ##1A77C1;
@@ -178,7 +186,7 @@ header nav li:last-child{
 /*this is to add the ash color hue or dim the background color*/
 .hero .background-image:after{
 
-   content: 'Hello';
+   content: '';
     position: absolute;
     top:0;
     left:0;
