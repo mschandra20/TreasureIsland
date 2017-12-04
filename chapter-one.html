@@ -18,14 +18,15 @@
 <body id="top">
 
     <header>
-        <a href="http://www.google.com" target="_blank"><h3>Google</h3></a>
+        <a href="https://en.wikipedia.org/wiki/Treasure_Island" target="_blank"><h3 style="font-size: 30px; font-family:sans-serif ">Treasure Island</h3></a>
         <nav>
-            <li><a href="#" id="#top">Top</a></li>
-            <li><a  href="#" id="#about">About</a></li>
-            <li><a  href="#" id="#illus">Illustration</a></li>
-            <li><a   href="#" id="#read">Read</a></li>
-            <li><a  href="#" id="#chapter">Chapters</a></li>
+            <li><a href="#top" >Top</a></li>
+            <li><a  href="#about">About</a></li>
+            <li><a  href="#illus" >Illustration</a></li>
+            <li><a   href="#read" >Read</a></li>
+            <li><a  href="#chapter">Chapters</a></li>
         </nav>
+
     </header>
 
     <section id="hero" class="hero">
@@ -44,7 +45,7 @@
         <p>Treasure Island is traditionally considered a coming-of-age story, and is noted for its atmosphere, characters, and action. It is also noted as a wry commentary on the ambiguity of morality— as seen in Long John Silver — unusual for children's literature. It is one of the most frequently dramatized of all novels. Its influence is enormous on popular perceptions of pirates, including such elements as treasure maps marked with an “X”, schooners, the Black Spot, tropical islands, and one-legged seamen bearing parrots on their shoulders.</p>
     <hr>
 
-        <h2>Characters</h2>
+        <h3>Characters</h3>
 
         <ul class="grid">
         <li>
@@ -139,7 +140,7 @@ Yo-ho-ho, and a bottle of rum!”</p>
 
 </section>
 
-    <section id="chapter">
+    <section id="chapter" class="chaps">
         <img src="images/frontis-piece.jpg" alt="frontis" title="frontis" class="round">
         <h3>Continue Reading</h3>
     <ul>
@@ -162,24 +163,27 @@ Yo-ho-ho, and a bottle of rum!”</p>
             <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         </ul>
 
-        <p>Read the whole <i>Treasure Island</i> novel here</p>
+        <p>Read the whole &nbsp <i>Treasure Island</i> &nbsp novel here</p>
         <p>&copy;&nbsp;<script>document.write(new Date().getFullYear())</script> Reserved</p>
     </footer>
 
+     <!-- JAVASCRIPT CODE -->
     <script type="text/javascript">
-    $(document).ready(function(){
-        $('a[href^="#"]').on('click',function(e){e.preventDefault();
-    var target=this.hash,
-        $target=$(target);
 
-        $('html.body').stop().animate({
-            'scrollTop':$target.offset().top
-        },900,'swing',function() {
-            window.location.hash=target;
-     });
-    });
-    });
+           $(document).ready(function () {
+                $('a[href^="#"]').on('click', function (e) {
+                    e.preventDefault();
 
+                    var target = this.hash,
+                        $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 900, 'swing', function () {
+                        window.location.hash = target;
+                    });
+                });
+            });
     </script>
 
 </body>
