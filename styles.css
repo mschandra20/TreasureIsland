@@ -113,7 +113,7 @@ ul.grid{
 
 /*HEADER */
 header{
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     background-color: rgba(0,0,0,0.7);
@@ -179,7 +179,7 @@ header nav li:last-child{
 }
 
 .hero .background-image{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width:100%;
@@ -193,7 +193,7 @@ header nav li:last-child{
 .hero .background-image:after{
 
    content: '';
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 100%;
@@ -305,7 +305,7 @@ header nav li:last-child{
 /*FOOTER */
 
 footer{
-    background-color: #000;
+    background-color: rgba(0,0,0,0.7);
     color:white;
     padding:60px 0px;
 }
@@ -318,7 +318,15 @@ footer ul{
 }
 
 footer ul li{
-    padding: 0px 10px;
+    padding: 10px 10px;
+    font-size: 30px;
+    transition-property: padding-top;
+    transition-duration: 0.2s;
+
+}
+footer ul li:hover{
+    padding-top: 2px;
+    transition-duration: 0.2s;
 
 }
 
@@ -330,11 +338,6 @@ footer ul li:last-child{
     margin-right:0;
 }
 
-footer{
-    background-color: rgba(0,0,0,0.7);
-    color:white;
-    padding:60px 0px;
-}
 footer p{
     text-transform: uppercase;
     margin-bottom: 10px;
